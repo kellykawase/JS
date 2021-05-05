@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cadastro de login</title>
+        <link rel="stylesheet" type="text/css" href="usuario.css" />
+    </head>
+    <body>
+        <header>
+                <h1>Cadastro de Login</h1>
+        </header>
+        <main>
+            <form method="POST" id="formPrincipal">
+
+                    <label for="txtSenha">Senha:</label>
+
+                    <input type="password" id="txtSenha" onblur="validaSenha();" />
+                    
+                    <img src="question.png" height="16px"onmouseover="mostraDica();"/>
+                    <span class="dica" id="dicaTexto">Senha precisa ter ao menos 6 caracteres</span>
+               
+
+                   <p> <label for="txtEmail">Email:</label>
+
+                    <input type="email" id="txtEmail" onblur="validaEmail();" />
+                    
+                    <img src="question.png" height="16px"onmouseover="DicaEmail();"/>
+                    <span class="dica" id="dicaEmail">Esse não é um formato válido para e-mail</span>
+                </p>
+
+                
+
+                <p><input type="submit" value="OK" /></p>
+            </form>
+        </main>
+        <script type="text/javascript" src="usuario.js"></script>
+    </body>
+</html>
