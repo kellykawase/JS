@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0"> 
+        <title>Permanência de dados</title>
+
+        <style>
+
+        </style>
+
+        <script>
+
+           // let a = {nome: "Kelly", n1: 9.0}
+
+            //localStorage.setItem("aluno",JSON.stringify(a));
+
+            let a = localStorage.getItem("aluno");
+            console.log(JSON.parse(a));
+
+            localStorage.clear();//vai apagar
+            //tudo que tiver na memória
+
+        </script>
+
+
+
+    </head>
+    <body>
+        <h1 id="nome"></h1>
+        <input type="text" oninput="atualizar(this)">
+    </body>
+</html>
