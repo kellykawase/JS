@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+    </style>
+
+    <script>
+        function f(){
+            console.log("Teste")
+            console.log(this)
+        }
+
+        function f1(){
+            console.log("Teste f1")
+        }
+
+        window.onload = function(){
+            let h1 = document.getElementsByTagName("h1")[0];
+            h1.addEventListener("click",f1)
+        }
+
+    </script>
+
+<!--quando criado pelo html coloca onClick, quando criado pelo script coloca click-->
+</head>
+<body>
+    
+    <h1 onClick="f()">Title</h1>
+
+
+
+</body>
+</html>
